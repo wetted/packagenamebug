@@ -1,14 +1,15 @@
-package com.example.A;
+package com.example.b;
 
 import io.micronaut.runtime.EmbeddedApplication;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import javax.inject.Inject;
 
+// this fails too, but passes if there are no classes in the packages with caps
 @MicronautTest
-class PackagenamebugTest {
+class PackagenameShouldPassTest {
 
     @Inject
     EmbeddedApplication<?> application;
